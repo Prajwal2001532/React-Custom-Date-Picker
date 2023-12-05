@@ -1,0 +1,156 @@
+#root {
+  max-width: 1280px;
+  margin: 0 23 auto;
+  padding: 0.2rem;
+  text-align: center;
+}
+
+body{
+  height: 900px;
+  background-image: url('./assets/background.png');
+  background-position:bottom;
+  background-size: cover;
+}
+.logo {
+  margin-top: -250px;
+  height: 8em;
+  padding: 4.5em;
+  will-change: filter;
+  
+}
+
+.card {
+  padding: 2em;
+}
+
+
+/* Input Design */
+.datetime-container {
+  position: relative;
+  display: inline-block;
+}
+
+.outer{
+  font-size: 16px; /* Adjust the font size as needed */
+  font-weight: bold;
+  
+}
+
+.label {
+  margin-left: 75px;
+  display:flex;
+}
+
+
+.datetime-input {
+  width: 150px;
+  padding: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin-right: 20px; /* Add some spacing between input fields */
+  background-image: url('./assets/cal.png');
+  background-repeat: no-repeat;
+  background-position:left;
+  text-align: right;
+  border-color: none;
+  box-shadow: none;
+  background-size:contain;
+
+}
+.datetime-input:focus{
+  border-color: none;
+  box-shadow: none;
+  
+}
+.datetime-input:hover{
+    border-color: lightblue;
+}
+
+
+
+/* Style for calender view */
+
+
+.datetime-container {
+  position: relative;
+  display: inline-block;
+
+}
+
+.datetime-input {
+  width: 180px;
+  padding: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+.date-picker {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  width: 360px; /* Adjust the width as needed */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: #f0f0f0;
+}
+
+.nav-button {
+  cursor: pointer;
+}
+
+.month-year {
+  font-weight: bold;
+}
+
+.days {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.date {
+  padding: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.start-date {
+  background-color: #bfe6b4; /* Light green for start date */
+}
+
+.end-date {
+  background-color: #bfe6b4; /* Light green for end date */
+}
+
+.in-range {
+  background-color: #e0f7fa; /* Light blue for in-range dates */
+}
+
+/* For Show Last options */
+.last-options span {
+  margin-right: 10px; /* Adjust the value as needed */
+  margin-top:10px;
+}
+
+/* For Calendar view */
+.dates .date {
+  
+  margin-right: 8px; /* Adjust the value as needed */
+}
